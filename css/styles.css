@@ -20,6 +20,40 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  max-height: 80px;
+  margin: 0 ;
+  border-bottom: 1px ;
+}
+.link-logo {
+  margin-right: 93px;
+  padding-left: 215px;
+}
+
+.link-nav {
+  display: flex;
+  margin-right: auto;
+  padding: 0;
+  gap: 50px;
+}
+
+.link-contacts {
+  display: flex;
+  margin-left: auto;
+  padding-left: 215px;
+  gap: 30px;
+}
+
+
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -90,6 +124,8 @@ ul {
     line-height: 1.36;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    text-align: center;
+    padding: 200px 452px 30px;
 }
 
 .hero-btn {
@@ -99,7 +135,11 @@ ul {
   font-weight: 700;
   line-height: 1.9;
   border: none;
-}
+  padding: 10px 32px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 0 auto;
+ }
 .hero-btn:hover {
   background-color: var(--btnhover-color);
 }
