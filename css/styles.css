@@ -21,13 +21,13 @@ ul {
   list-style-type: none;
 }
 
-h1, h2 h3, p, ul {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
   outline:  1px solid tomato;
@@ -133,10 +133,10 @@ h1, h2 h3, p, ul {
 }
 
 .hero-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 
@@ -168,28 +168,43 @@ h1, h2 h3, p, ul {
 .hero-btn:hover {
   background-color: var(--btnhover-color);
 }
-.advantages-container {
-  margin: -14px;
+
+.advantages {
+  display: flex;
+  padding-top: 94px;
+  gap: 30px;
 }
 
 .points {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-  text-transform: uppercase;  
-}
+  text-transform: uppercase;
+  margin-bottom: 10px;
+ }
 
 .description {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 118px;
 }
 
 .our-job-heading {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.our-job-items {
+  display: flex;
+  justify-content: space-between;
+  max-height: 294px;
+  padding-bottom: 94px;
+  
 }
 
 .our-team {
@@ -197,13 +212,27 @@ h1, h2 h3, p, ul {
 }
 
 .our-team-heading {
-   font-size: 36px;
-   line-height: 1.2;
-   letter-spacing: 0.03;
-
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03;
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
-.workers {
+.our-team-workers {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.our-team-worker {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.worker {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
@@ -219,6 +248,22 @@ h1, h2 h3, p, ul {
 
 .page-bottom {
   background-color: var(--banner-color);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.link-contacts {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.location {
+  margin-bottom: 9px;
+}
+
+.link-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .location .link-bottom {
@@ -249,6 +294,8 @@ h1, h2 h3, p, ul {
   letter-spacing: 0.03em;
   color: var(--white-color);
   text-decoration: none;
+  display: inline-block;
+  padding-top: 60px;
 }
 
 .link-logo-bottom > span {
