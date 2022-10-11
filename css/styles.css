@@ -8,6 +8,7 @@
   --btnhover-color: #0b79d3;
   --bckgrnd-color: #f5f4fa;
   --border-bottom-color: #ececec;
+  --border-card-color: #eee;
   --main-font-family: "Roboto", sans-serif;
   --additional-font-family: "Raleway", sans-serif;
 }
@@ -302,6 +303,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: var(--bluelite-color);
 }
 
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 94px;
+  margin-bottom: 50px;
+  background-color: rgb(122, 64, 185);
+}
+
 .btn {
   background-color: var(--bckgrnd-color);
   font-weight: 500;
@@ -311,7 +321,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
+
+
 
 .btn:hover {
   background-color: var(--bluelite-color);
@@ -321,6 +334,24 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .btn:focus {
   background-color: var(--bluelite-color);
   color: var(--white-color);
+}
+
+.portfolio {
+  background-color:aqua;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* flex-basis: calc((100%-60)/3); */
+  background-color: rgb(250, 215, 215);
+}
+
+.portfolio-list-item {
+  background-color: var(--white-color);
+  border: 1px solid var(--border-card-color);
 }
 
 .our-works   {
