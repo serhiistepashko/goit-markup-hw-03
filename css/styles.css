@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 0 15px;
   /* outline:  1px solid tomato; */
 }
+
 .header-page {
   border-bottom: 1px solid var(--border-bottom-color);
   max-width: 1600px;
@@ -62,8 +63,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding-bottom: 32px;
   gap: 30px;
 }
-
-
 
 .visually-hidden {
   position: absolute;
@@ -106,6 +105,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: var(--primary-color);
   text-decoration: none;
 }
+
 .link:hover {
   color: var(--bluelite-color);
 }
@@ -133,15 +133,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+  padding: 200px 0;
 }
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
 
 .hero-heading {
     font-size: 44px;
@@ -150,8 +143,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
     text-transform: uppercase;
     letter-spacing: 0.06em;
     text-align: center;
-    padding: 200px 452px 0;
-    
+    max-width: 696px;
+    margin: 0 auto 30px;
 }
 
 .hero-btn {
@@ -165,19 +158,19 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 10px 32px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-bottom: 200px;
-  
- }
+  margin: 0 auto;
+}
+
 .hero-btn:hover {
   background-color: var(--btnhover-color);
 }
 
-.what-we-do {
+/* .advantages {
   max-width: 1600px;
   margin: 0 auto;
-}
+} */
 
-.advantages {
+.advantages-list {
   display: flex;
   padding-top: 94px;
   gap: 30px;
@@ -199,7 +192,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 118px;
 }
 
-.our-job-heading {
+.what-we-do {
+  /* max-width: 1600px;
+  margin: 0 auto; */
+}
+
+.what-we-do-heading {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -207,7 +205,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 50px;
 }
 
-.our-job-items {
+.what-we-do-list {
   display: flex;
   justify-content: space-between;
   max-height: 294px;
@@ -230,16 +228,23 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 50px;
 }
 
-.our-team-workers {
+.our-team-list {
   display: flex;
   gap: 30px;
   padding-bottom: 94px;
 }
 
-.our-team-worker {
+.our-team-list-item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-description {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: -4px;
+  /* background-color: blue; */
 }
 
 .worker {
@@ -247,7 +252,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
+  margin-bottom: 10px;
+ }
 
 .position {
     font-size: 16px;
@@ -312,18 +318,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: var(--bluelite-color);
 }
 
-.portfolio {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
 .btn-list {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-top: 94px;
   margin-bottom: 50px;
-  /* background-color: rgb(122, 64, 185); */
 }
 
 .btn {
@@ -338,8 +337,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 6px 22px;
 }
 
-
-
 .btn:hover {
   background-color: var(--bluelite-color);
   color: var(--white-color);
@@ -351,14 +348,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .portfolio {
-  /* background-color:aqua; */
+  padding: 94px 0;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: rgb(250, 215, 215); */
-  padding-bottom: 94px;
 }
 
 .portfolio-list-item {
@@ -389,13 +384,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   margin-bottom: 4px;
+}
 
 .work-type {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding: 0 24px 20px;
 }
 
 
