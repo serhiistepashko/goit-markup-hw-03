@@ -36,6 +36,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 0;
 }
 
+/* стилі у тегів <section> */
+.changes-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   max-width: 1200px;
   margin-right: auto;
@@ -171,12 +177,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 background-color: var(--btnhover-color);
 }
 
-/* секція клас "advantages" (мейн) */
-.advantages {
-  padding-top: 94px;
-  /* background-color: red; */
-}
-
 /* список секціїї advantages (мейн) */
 .advantages-list {
   display: flex;
@@ -202,7 +202,7 @@ background-color: var(--btnhover-color);
 
 /* секція з класом "what-we-do" (мейн) */
 .what-we-do {
-  padding-top: 94px;
+  padding-top: 0;
   /* background-color: teal; */
 }
 
@@ -220,15 +220,11 @@ background-color: var(--btnhover-color);
   display: flex;
   justify-content: space-between;
   max-height: 294px;
-  padding-bottom: 94px;
-  
 }
 
 /* секція з класом "our-team" (мейн) */
 .our-team {
   background-color: var(--bckgrnd-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* заголовок h2 секції "our-team" (мейн) */
@@ -349,12 +345,8 @@ background-color: var(--btnhover-color);
 так і для portfolio.html*/
 
 
-/* Властивості для мейну файлу portfolio.html */
+/* Стилі для мейну файлу portfolio.html */
 
-/* секція з класом "portfolio" (мейн) */
-.portfolio {
-  padding: 94px 0;
-}
 
 /* список кнопок секції з класом "portfolio"(мейн) */
 .btn-list {
